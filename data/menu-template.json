@@ -1,0 +1,21 @@
+{
+  "categories": [
+    { "id": "category-1", "name": "نام دسته از منوی چاپی", "icon": "☕", "sort_order": 0, "active": true }
+  ],
+  "products": [
+    {
+      "category_id": "category-1",
+      "name": "نام محصول از منوی چاپی",
+      "description": "",
+      "price_type": "unpriced",
+      "price": null,
+      "special_price": null,
+      "variants": [],
+      "image_path": null,
+      "status": false,
+      "featured": false,
+      "is_new": false,
+      "sort_order": 0
+    }
+  ]
+}

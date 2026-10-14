@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>مدیریت کافه صفا</title><meta name="robots" content="noindex, nofollow"><meta name="theme-color" content="#23482e">
+  <link rel="icon" type="image/jpeg" href="/assets/logo.jpg"><link rel="apple-touch-icon" href="/assets/logo.jpg">
+  <link rel="stylesheet" href="/assets/style.css"><script type="module" src="/assets/admin.js"></script>
+</head>
+<body class="admin-body">
+  <div id="login-view" class="login-wrap">
+    <div class="login-card"><a href="/" class="login-brand"><img src="/assets/logo.jpg" alt="کافه صفا" width="100" height="100"></a><p class="eyebrow">کافه صفا</p><h1>ورود به مدیریت</h1><p class="muted small">منو و اطلاعات کافه را از همین‌جا مدیریت کنید.</p>
+      <form id="login-form"><label>نام کاربری<input name="username" dir="ltr" autocomplete="username" autocapitalize="none" spellcheck="false" minlength="3" maxlength="64" required></label><label>رمز عبور<input name="password" type="password" autocomplete="current-password" required maxlength="256"></label><p id="login-error" class="form-error" role="alert"></p><button class="button primary wide" type="submit">ورود به پنل <span aria-hidden="true">←</span></button></form>
+      <a class="text-link small" href="/">بازگشت به منوی صفا</a>
+    </div>
+  </div>
+  <div id="admin-view" hidden>
+    <header class="admin-header"><div class="wrap admin-top"><a class="brand" href="/"><img id="admin-logo" src="/assets/logo.jpg" alt="لوگوی صفا" width="42" height="42"><span id="admin-name">کافه صفا<small>پنل مدیریت</small></span></a><div class="admin-actions"><a class="button secondary small-button" href="/" target="_blank" rel="noopener">دیدن منو ↗</a><button id="logout" class="button secondary small-button">خروج</button></div></div></header>
+    <main class="wrap admin-main"><div class="admin-welcome"><div><p class="eyebrow">همه‌چیز از اینجا</p><h1>مدیریت صفا</h1></div><span class="status-pill" id="publish-status"></span></div>
+      <div id="stats" class="stats"></div>
+      <nav class="admin-tabs" aria-label="بخش‌های مدیریت"><button data-tab="products" class="active">محصولات</button><button data-tab="categories">دسته‌ها</button><button data-tab="settings">اطلاعات کافه</button><button data-tab="media">تصاویر</button><button data-tab="qr">کد QR</button></nav>
+      <section id="admin-content" class="admin-content" aria-live="polite"></section>
+    </main>
+  </div>
+  <dialog id="editor" class="editor-dialog"><div class="dialog-heading"><h2 id="editor-title"></h2><button id="editor-close" class="icon-button" aria-label="بستن">×</button></div><div id="editor-body"></div></dialog>
+  <dialog id="confirmation" class="confirm-dialog"><h2>حذف شود؟</h2><p id="confirm-message"></p><div class="form-actions"><button id="confirm-cancel" class="button secondary">انصراف</button><button id="confirm-ok" class="button danger">حذف</button></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body></html>

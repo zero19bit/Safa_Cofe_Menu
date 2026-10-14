@@ -1,0 +1,9 @@
+# Never upload local secrets, caches, or generated files to Vercel CLI.
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.vercel/
+.git/
+*.log

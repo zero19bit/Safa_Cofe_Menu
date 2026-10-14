@@ -181,3 +181,4 @@ npm test
 
 فونت Vazirmatn به‌صورت محلی در خروجی ساخت کپی می‌شود. فایل مجوز فونت و QR encoder در `THIRD_PARTY_NOTICES.md` معرفی شده‌اند. پوشهٔ `node_modules` و هیچ کلید یا رمز واقعی‌ای در ZIP قرار نگرفته است.
 # Safa_Cofe_Menu
+# Safa_Cofe_Menu

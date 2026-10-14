@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>کافه صفا | منوی دیجیتال</title>
+  <meta name="description" content="منوی دیجیتال کافه صفا؛ نوشیدنی‌ها، خوراکی‌ها و قیمت‌های به‌روز کافه را ببینید.">
+  <meta name="theme-color" content="#23482e">
+  <meta property="og:title" content="کافه صفا | منوی دیجیتال">
+  <meta property="og:description" content="به صفا خوش آمدید. منوی کافه را همین‌جا ببینید.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fa_IR">
+  <link rel="icon" type="image/jpeg" href="/assets/logo.jpg">
+  <link rel="apple-touch-icon" href="/assets/logo.jpg">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="module" src="/assets/menu.js"></script>
+</head>
+<body>
+  <a class="skip" href="#menu">رفتن به منو</a>
+  <div id="demo-banner" class="demo-banner" hidden>پیش‌نمایش نمونه · محصول‌ها و قیمت‌ها تأیید نشده‌اند</div>
+  <header class="masthead wrap">
+    <a class="brand" href="/" aria-label="صفحه اصلی کافه صفا"><img class="brand-logo" src="/assets/logo.jpg" alt="لوگوی کافه صفا" width="48" height="48"><span data-cafe-name>کافه صفا</span></a>
+    <a class="text-link" href="#menu">دیدن منو <span aria-hidden="true">↙</span></a>
+  </header>
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">یک مکث، یک فنجان، صفا</p>
+      <h1 id="hero-title">خوش آمدید<br>به <span data-cafe-name>کافه صفا</span><span class="hero-dot">.</span></h1>
+      <p class="hero-sub" id="tagline">به صفا خوش آمدید</p>
+      <div class="hero-details" id="hero-details"></div>
+      <a class="button primary hero-button" href="#menu">منوی کافه <span aria-hidden="true">↓</span></a>
+    </div>
+    <div class="hero-art"><div class="logo-orbit"><img id="hero-logo" src="/assets/logo.jpg" alt="کافه صفا" width="250" height="250"></div><span class="art-caption" dir="ltr">SAFA · A LITTLE MOMENT OF CALM</span></div>
+  </section>
+  <div class="menu-toolbar">
+    <div class="wrap toolbar-inner">
+      <div class="search-wrap"><label class="sr-only" for="search">جست‌وجو در منو</label><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="دلتان چه می‌خواهد؟" autocomplete="off" maxlength="100"><button id="clear-search" class="icon-button" aria-label="پاک کردن جست‌وجو" hidden>×</button></div>
+      <button id="featured" class="button filter-button" aria-pressed="false">✦ پیشنهاد صفا</button>
+    </div>
+    <nav id="categories" class="wrap category-nav" aria-label="دسته‌بندی منو"></nav>
+  </div>
+  <main id="menu" class="wrap menu-main">
+    <div class="menu-heading"><div><p class="eyebrow">با سلیقه شما</p><h2>منوی صفا</h2></div><p class="small muted" id="result-count" aria-live="polite">قیمت‌ها به تومان</p></div>
+    <div id="menu-status" class="empty-state" role="status"><span class="loader" aria-hidden="true"></span><p>منو در حال دریافت است…</p></div>
+    <div id="menu-sections"></div>
+    <button id="retry" class="button secondary" hidden>تلاش دوباره</button>
+    <p class="menu-footnote" id="menu-footnote" hidden>تمام قیمت‌های عددی به تومان هستند. برای قیمت روز از همکاران ما بپرسید.</p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div><a class="brand footer-brand" href="/"><img id="footer-logo" src="/assets/logo.jpg" alt="لوگوی صفا" width="56" height="56"><span data-cafe-name>کافه صفا</span></a><p class="footer-tagline">یک مکث خوب در میان روز.</p></div>
+      <div id="footer-info" class="footer-info"></div>
+    </div>
+    <div class="wrap footer-bottom"><span>منوی دیجیتال <span data-cafe-name>کافه صفا</span></span><a href="/admin" class="admin-link">مدیریت کافه</a></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
